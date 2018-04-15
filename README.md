@@ -3,11 +3,13 @@ Get financial stock data from Yahoo Finance.
 This is a fixed version of pandas_datareader, using fix_yahoo_finance as an override.
 
 It produces comma separated files for each ticker you provide.
+Provide start date and ticker(s).
+End date is optional, and it uses todays date if not provided.
 
 Example of use:
 Usage:
 ```javascript
-$ python3 getsymbols.py -s=2012-01-01 -t=AAPL,INTC,TEL.OL,VEI.OL,NVDA
+$ python3 getsymbols.py --start=2012-01-01 --end=2017-12-31 --ticker=AAPL,INTC,TEL.OL,VEI.OL,NVDA
 ```
 
 For help menu:
